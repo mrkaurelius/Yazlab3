@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="send_tr">Gönder</string>
+    <string name="gallery_tr">Galeri</string>
+    <string name="camera_tr">Kamera</string>
+
+</resources>
