@@ -53,4 +53,51 @@
             android:text="@string/gallery_tr" />
     </LinearLayout>
 
+    <CheckBox
+        android:id="@+id/compressCheck"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sıkıştırma"
+        app:layout_constraintBottom_toTopOf="@+id/segmantationCheck"
+        app:layout_constraintEnd_toStartOf="@+id/editCompressionRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <CheckBox
+        android:id="@+id/segmantationCheck"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="251dp"
+        android:layout_marginRight="251dp"
+        android:layout_marginBottom="119dp"
+        android:text="Segmentasyon"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compressCheck" />
+
+    <EditText
+        android:id="@+id/editCompressionRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="175dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="90"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
